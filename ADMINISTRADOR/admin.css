@@ -1,0 +1,156 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--main-color);
+    font-family: 'Roboto';
+}
+:root
+{
+    --main-color: #1E2022;
+    --orange: #EB5E0B;
+    --text: #C9D6DF;
+}
+nav
+{
+    height: 70px;
+    width: 100%;
+    min-width: 320px;
+}
+nav ul
+{
+    height: 100%;
+    width: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    list-style: none;
+}
+nav ul li i
+{
+    font-size: 25px;
+    color: var(--orange);
+    margin:0px 15px;
+}
+nav ul li i:hover
+{
+    transform: scale(1.05);
+    cursor: pointer;
+    color: #fff;
+}
+section
+{
+    height: 600px;
+    min-width: 280px;
+    max-width: 650px;
+    margin: 20px auto;
+    border: 2px solid var(--orange);
+    border-radius: 15px;
+    position: relative;
+}
+section h1
+{
+    position: absolute;
+    bottom: 580px;
+    left: calc(50% - 95px);
+    color: var(--orange);
+}
+section p
+{
+    margin: 15px;
+    margin-top: 40px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 20px;
+    color: var(--text);
+}
+.form 
+{
+    height: 370px;
+    margin-bottom: 0px;
+    width: auto;
+    padding: 20px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.form div 
+{
+    margin: 20px;
+}
+.form label
+{
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: var(--text);
+    padding: 0 20px;
+}
+.form input
+{
+    height: 40px;
+    width: 60px;
+    background-color: #fff;
+    font-size: 1.4rem;
+    text-align: center;
+}
+.form .submit 
+{
+    height: 50px;
+    width: 135px;
+    margin: 15px auto;
+    border: 4px solid var(--orange);
+    background-color: #fff;
+    border-radius: 45px;
+    color: var(--orange);
+    font-weight: 500;
+}
+.form .submit:hover
+{
+    background-color: var(--orange);
+    border: 4px solid #fff;
+    transform: scale(1.05);
+    color: #fff;
+    cursor: pointer;
+    transition: .2s;
+}
+.output--container
+{
+    margin: 0px 10px;
+    height: auto;
+    width: auto;
+    text-align: center;
+}
+.output--container span
+{
+    color: var(--text);
+    line-height: 20px;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+.button--container button
+{
+    width: 220px;
+    height: 70px;
+    position: absolute;
+    top: 560px;
+    left: calc(50% - 110px);
+    border: 4px solid var(--orange);
+    border-radius: 45px;
+    background-color: #fff;
+    color: var(--orange);
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.button--container button:hover
+{
+    background-color: var(--orange);
+    border: 4px solid #fff;
+    transform: scale(1.05);
+    color: #fff;
+    cursor: pointer;
+    transition: .2s;
+}
+

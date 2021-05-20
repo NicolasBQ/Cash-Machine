@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="cajero.css">
+    <title>Cajero</title>
+</head>
+<body>
+        <nav class="nav--bar">
+            <ul class="nav--list">
+                <li><a href="../INDEX/index.html"><i class="fas fa-home"></i></a></li>
+                <li><a href="../ADMINISTRADOR/admin.html"><i class="fa fa-address-book" aria-hidden="true"></i></a></li>
+            </ul>       
+        </nav>
+        <main class="main">
+            <div class="screen--container">
+                <div class="screen--money">
+                    <div class="fif--container">50$:<span class="fifty"></span></div>
+                    <div class="twe--container">20$:<span class="twenty"></span></div>
+                    <div class="ten--container">10$:<span class="ten"></span></div>
+                    <div><span class="total"></span></div>
+                </div>
+                <div class="main--screen">
+                    <h2 class="welcome">Welcome</h2>
+                </div>
+                <div class="result"></div>
+            </div>
+
+            <form class="main--form">
+                    <h3>Enter your name:</h3>
+                    <input type="text" class="name">     
+                <div class="keyboard--container">
+                    <h3>Type the value you want to get</h3>
+                    <div class="number--keyboard">
+                        <div class="one">1</div>
+                        <div class="two">2</div>
+                        <div class="three">3</div>
+                        <div class="four">4</div>
+                        <div class="five">5</div>
+                        <div class="six">6</div>
+                        <div class="seven">7</div>
+                        <div class="eight">8</div>
+                        <div class="nine">9</div>
+                        <div class="back--button"><i class="fa fa-arrow-left"  aria-hidden="true"></i></div>
+                        <div class="zero">0</div>
+                        <input type="submit" value="CONTINUE" />
+                    </div>
+                </div>
+            </form>
+        </main>
+    </body>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="cajero.js"></script>
+</html>

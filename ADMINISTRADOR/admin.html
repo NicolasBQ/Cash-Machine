@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="admin.css">
+    <title>Administrador</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="home"><a href="../INDEX/index.html"><i class="fas fa-home"></i></a></li>
+            <li class="cash"><a href="../CAJERO/cajero.html"><i class="far fa-money-bill-alt"></i></a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h1>ADMINISTRATOR</h1>
+            <p>Enter the number of bills for each bill. The minimum value you can enter is 20 for each bill.</p>
+            <form class="form">
+                <div><label for="50">50$</label><input type="text" class="fifty"></div>
+                <div><label for="20">20$</label><input type="text" class="twenty"></div>
+                <div><label for="10">10$</label><input type="text" class="ten"></div>
+                <input type="submit" value="Accept" class="submit">
+            </form>
+            <div class="output--container"></div>
+            <div class="button--container"></div>
+        </section>
+    </main>
+
+    <script src="admin.js"></script>
+    <script src="../CAJERO/cajero.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,231 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--main-color);
+    font-family: 'Roboto';
+}
+:root
+{
+    --main-color: #1E2022;
+    --orange: #EB5E0B;
+    --text: #C9D6DF;
+}
+.nav--bar
+{
+    height: 70px;
+    width: 100%;
+    min-width: 320px;
+}
+.nav--list
+{
+    height: 100%;
+    width: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    list-style: none;
+}
+.nav--list li a i
+{
+    font-size: 25px;
+    color: var(--orange);
+    margin:0px 15px;
+}
+.nav--list li a i:hover
+{
+    transform: scale(1.05);
+    cursor: pointer;
+    color: #fff;
+}
+main 
+{
+    height: 670px;
+    width: 100%;
+    min-width: 320px;
+    max-width: 900px;
+    margin: auto;
+    border: 4px solid var(--orange);
+    border-radius: 45px;
+}
+.screen--container
+{
+    height: 15%;
+    width: 90%;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    border: 4px solid var(--orange);
+    border-radius: 20px;
+}
+.screen--money  
+{
+    height: auto;
+    width: 20%;
+    margin: 15px .5px;
+    justify-self: flex-start;
+    align-self: flex-start;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: auto 0px;
+}
+.screen--money div, span
+{
+    margin: 0px 5px;
+    background-color: #fff;
+    font-size: .7rem;
+    font-weight: bold;
+    text-align: center;
+}
+.main--screen 
+{
+    align-self: center;
+    position: absolute;
+    left: calc(50% - 40px);
+    background-color: #fff;
+}
+.welcome
+{
+    font-size: 1.6rem;
+    font-family: 'Major Mono Display';
+    font-weight: bold;
+    background-color: #fff;
+    animation-name: tittle-opacity;
+    animation-duration: 1.7s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+@keyframes tittle-opacity
+{
+    10% 
+    {
+        opacity: 1;
+    }
+    100%
+    {
+        opacity: 0;
+    }
+
+}
+.result 
+{
+    display: none;
+    height: auto;
+    width: 70%;
+    max-height: 90px;
+    align-self: center;
+    background-color: #fff;
+    word-wrap: break-word;
+    overflow: hidden;
+    font-size: 1.6rem;
+    font-family: 'Major Mono Display';
+    font-weight: bold;
+    text-align: center;
+}
+.main--form
+{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main--form h3
+{
+    color: var(--text);
+    text-align: center;
+    margin-bottom: 10px;
+}
+.main--form input
+{
+    height: 40px;
+    width: 60%;
+    margin-bottom: 20px;
+    background-color: #fff;
+    font-size: 1.3rem;
+    text-align: center;
+}
+.keyboard--container
+{
+    height: auto;
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+.keyboard--container h3 
+{
+    color: var(--text);
+    text-align: center;
+    margin-bottom: 10px;
+}
+.number--keyboard
+{
+    height: 100%;
+    margin-top: 20px;
+    align-self: center;
+    display: grid;
+    grid-template-columns: repeat(3, 87px);
+    grid-template-rows: repeat(4, 70px);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+.number--keyboard div
+{
+    font-size: 2rem;
+    color: var(--orange);
+    border-radius: 20px;
+    border: 2px solid #fff;
+    text-align: center;
+    padding: 15px ;
+}
+.number--keyboard div:hover
+{
+    cursor: pointer;
+}
+.number--keyboard input
+{
+    height: 70px;
+    width: 87px;
+    background-color: green;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    font-size: 1rem;
+}
+.back--button
+{
+    background-color: red;
+}
+.back--button i
+{
+    background-color: red;
+    color: #fff;
+}
+.back--cash
+{
+    width: 220px;
+    height: 70px;
+    position: absolute;
+    left: calc(50% - 110px);
+    border: 4px solid var(--orange);
+    border-radius: 45px;
+    background-color: #fff;
+    color: var(--orange);
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.back--cash:hover
+{
+    background-color: var(--orange);
+    border: 4px solid #fff;
+    transform: scale(1.05);
+    color: #fff;
+    cursor: pointer;
+    transition: .2s;
+}
+
+
